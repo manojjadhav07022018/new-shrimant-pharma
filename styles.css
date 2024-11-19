@@ -11,53 +11,67 @@ body {
 }
 
 header {
-    background-color: #fff;
+    background-color: #004c8c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
-    padding: 15px 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header .logo img {
-    height: 50px;
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
 }
 
-header .header-contact p,
-header .header-contact a {
+header .header-text {
+    flex: 1;
+    text-align: center;
+}
+
+header .header-text h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header .header-text p {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+header .header-contact {
+    text-align: right;
+}
+
+header .header-contact p {
     font-size: 14px;
-    color: #333;
+    margin-bottom: 5px;
 }
 
-nav {
-    background-color: #004c8c;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-nav ul li {
-    list-style: none;
-    margin-right: 30px;
-}
-
-nav ul li a {
+header .header-contact a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
+/* Hero Section */
 .hero {
-    background-color: #004c8c;
+    background-color: #ff6600;
     color: #fff;
+    padding: 40px 20px;
     text-align: center;
-    padding: 60px 20px;
 }
 
-.hero h1 {
-    font-size: 36px;
+.hero h2 {
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
@@ -76,38 +90,18 @@ nav ul li a {
 
 .search-form button {
     padding: 10px 20px;
-    background-color: #ff6600;
+    background-color: #004c8c;
     border: none;
     border-radius: 25px;
     color: white;
     cursor: pointer;
 }
 
-.categories {
-    padding: 50px 20px;
-    text-align: center;
+.search-form button:hover {
+    background-color: #003366;
 }
 
-.categories h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.category-list {
-    display: flex;
-    justify-content: space-around;
-}
-
-.category {
-    width: 200px;
-    text-align: center;
-}
-
-.category img {
-    width: 100%;
-    border-radius: 8px;
-}
-
+/* Featured Products Section */
 .products {
     padding: 50px 20px;
     background-color: #fff;
@@ -156,54 +150,15 @@ nav ul li a {
     color: #888;
 }
 
-.contact, .about {
-    padding: 50px 20px;
-    background-color: #fff;
-}
-
-.contact h2, .about h2 {
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.contact p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-
-.contact form input,
-.contact form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact form button {
-    background-color: #004c8c;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact form button:hover {
-    background-color: #003366;
-}
-
 footer {
-    background-color: #004c8c;
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    color: white;
+    color: #ff6600;
     text-decoration: none;
 }
 
