@@ -95,8 +95,8 @@ nav ul li a:hover {
 .product-list {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .product-card {
@@ -113,20 +113,19 @@ nav ul li a:hover {
     transform: translateY(-10px);
 }
 
+.product-logo {
+    margin-bottom: 10px;
+}
+
 .product-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.product-logo {
-    margin-bottom: 10px;
-}
-
 .product-card h3 {
     margin-top: 10px;
     font-size: 22px;
-    color: #333;
 }
 
 .product-card .price {
@@ -154,69 +153,15 @@ nav ul li a:hover {
     background-color: #218838;
 }
 
-
 /* About Section */
 .about {
     padding: 50px;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
 .about h2 {
-    text-align: center;
     font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 18px;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Contact Section */
-.contact {
-    padding: 50px;
-    background-color: white;
-}
-
-.contact h2 {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact label {
-    display: block;
-    margin: 10px 0 5px;
-    font-size: 18px;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.contact button {
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.contact button:hover {
-    background-color: #218838;
 }
 
 /* Footer Section */
