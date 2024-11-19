@@ -14,16 +14,18 @@
 <body>
     <!-- Header Section with Business Name -->
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="New Shrimant Pharma Logo" />
-        </div>
-        <div class="header-text">
-            <h1>New Shrimant Pharma</h1>
-            <p>Your Trusted Pharmacy for Quality Medicines</p>
-        </div>
-        <div class="header-contact">
-            <p>Call Us: +91 8828256872 | +91 9892909732</p>
-            <a href="mailto:info@newshrimantpharma.com">info@newshrimantpharma.com</a>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo.png" alt="New Shrimant Pharma Logo" />
+            </div>
+            <div class="header-text">
+                <h1>New Shrimant Pharma</h1>
+                <p>Your Trusted Pharmacy for Quality Medicines</p>
+            </div>
+            <div class="header-contact">
+                <p>Call Us: +91 8828256872 | +91 9892909732</p>
+                <a href="mailto:info@newshrimantpharma.com">info@newshrimantpharma.com</a>
+            </div>
         </div>
     </header>
 
@@ -56,7 +58,27 @@
                     <p>₹150</p>
                     <button class="add-to-cart" data-id="2">Add to Cart</button>
                 </div>
-                <!-- More products go here -->
+                <!-- Example Product 3 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Cetirizine 10mg" />
+                    <h3>Cetirizine 10mg</h3>
+                    <p>₹100</p>
+                    <button class="add-to-cart" data-id="3">Add to Cart</button>
+                </div>
+                <!-- Example Product 4 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Ibuprofen 200mg" />
+                    <h3>Ibuprofen 200mg</h3>
+                    <p>₹180</p>
+                    <button class="add-to-cart" data-id="4">Add to Cart</button>
+                </div>
+                <!-- Example Product 5 -->
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Vitamin C Tablets" />
+                    <h3>Vitamin C Tablets</h3>
+                    <p>₹250</p>
+                    <button class="add-to-cart" data-id="5">Add to Cart</button>
+                </div>
             </div>
         </section>
 
@@ -73,4 +95,37 @@
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
             <p>For any inquiries, please feel free to contact us using the details below:</p>
-            <p>Phone: +91 882825687
+            <p>Phone: +91 8828256872, +91 9892909732</p>
+            <p>Email: <a href="mailto:info@newshrimantpharma.com">info@newshrimantpharma.com</a></p>
+            
+            <!-- Address -->
+            <p><strong>Address:</strong> Neelam Nagar Bldg, Shop NO 2, 9-C, Mumbai City, Neelam Nagar, Phase-II, Mulund East, Mumbai, Maharashtra 40008</p>
+
+            <!-- Contact Form -->
+            <form action="#">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 New Shrimant Pharma. All rights reserved.</p>
+            <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
