@@ -1,17 +1,14 @@
-/* Reset some basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #2e8b57;
+    background-color: #28a745;
     color: white;
     padding: 20px;
     display: flex;
@@ -20,28 +17,28 @@ header {
 }
 
 header .logo img {
-    max-width: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
-header .header-contact p,
-header .header-contact a {
-    margin: 0 10px;
-    color: #fff;
-    font-size: 14px;
+header .header-contact {
+    text-align: right;
 }
 
 nav {
-    background-color: #2e8b57;
-    padding: 15px 0;
-    text-align: center;
+    background-color: #333;
+    color: white;
 }
 
 nav ul {
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline-block;
     margin: 0 15px;
 }
 
@@ -55,110 +52,158 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Hero Section */
 .hero {
-    background-color: #388e3c;
+    background-color: #007bff;
     color: white;
-    text-align: center;
     padding: 50px;
+    text-align: center;
 }
 
 .hero h1 {
     font-size: 36px;
 }
 
-.hero .search-form input {
-    padding: 12px;
-    font-size: 18px;
-    width: 60%;
-    margin-right: 10px;
+.search-form {
+    margin-top: 20px;
 }
 
-.hero .search-form button {
-    padding: 12px;
-    font-size: 18px;
-    background-color: #2e8b57;
-    color: white;
-    border: none;
+.search-form input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-.hero .search-form button:hover {
-    background-color: #388e3c;
-}
-
+/* Products Section */
 .products {
+    padding: 50px;
     background-color: white;
-    padding: 40px;
-    text-align: center;
 }
 
 .products h2 {
+    text-align: center;
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
 .product-list {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .product-card {
+    text-align: center;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
 }
 
 .product-card img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
 .product-card h3 {
-    margin-top: 15px;
+    margin-top: 10px;
+    font-size: 22px;
 }
 
 .product-card p {
-    margin: 10px 0;
-}
-
-.product-card .product-description {
-    font-size: 14px;
-    color: #555;
+    font-size: 18px;
     margin-top: 10px;
 }
 
-.product-card button {
-    background-color: #2e8b57;
-    color: white;
+.product-card .add-to-cart {
+    margin-top: 15px;
     padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-.product-card button:hover {
-    background-color: #388e3c;
+.product-card .add-to-cart:hover {
+    background-color: #218838;
 }
 
-.about, .contact {
-    background-color: white;
-    padding: 40px;
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.about h2 {
     text-align: center;
-}
-
-.about h2, .contact h2 {
+    font-size: 30px;
     margin-bottom: 20px;
 }
 
-footer {
-    background-color: #2e8b57;
-    color: white;
+.about p {
+    font-size: 18px;
     text-align: center;
-    padding: 20px 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: white;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #218838;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 footer a {
