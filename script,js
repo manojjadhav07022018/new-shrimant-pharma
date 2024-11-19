@@ -1,6 +1,6 @@
-// Example JavaScript to handle Add to Cart functionality (basic example)
+// JavaScript for "Add to Cart" functionality (demo)
 document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', () => {
-        alert("Product added to cart!");
+    button.addEventListener('click', function() {
+        alert('Product added to your cart!');
     });
 });
