@@ -95,6 +95,8 @@ nav ul li a:hover {
 .product-list {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .product-card {
@@ -103,6 +105,12 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
 }
 
 .product-card img {
@@ -111,28 +119,41 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
+.product-logo {
+    margin-bottom: 10px;
+}
+
 .product-card h3 {
     margin-top: 10px;
     font-size: 22px;
+    color: #333;
 }
 
-.product-card p {
+.product-card .price {
     font-size: 18px;
-    margin-top: 10px;
+    color: #28a745;
+    margin: 10px 0;
+}
+
+.product-card .description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
 }
 
 .product-card .add-to-cart {
-    margin-top: 15px;
     padding: 10px 20px;
     background-color: #28a745;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .product-card .add-to-cart:hover {
     background-color: #218838;
 }
+
 
 /* About Section */
 .about {
