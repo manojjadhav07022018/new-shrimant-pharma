@@ -7,14 +7,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,24 +25,28 @@ header .logo img {
 
 header .header-contact p,
 header .header-contact a {
-    margin: 5px 0;
+    margin: 0 10px;
     color: #fff;
+    font-size: 14px;
+}
+
+nav {
+    background-color: #2e8b57;
+    padding: 15px 0;
+    text-align: center;
 }
 
 nav ul {
-    display: flex;
     list-style: none;
-    background-color: #333;
-    padding: 10px 0;
-    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 20px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 18px;
 }
@@ -53,39 +56,39 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-color: #5e8b7e;
+    background-color: #388e3c;
     color: white;
-    padding: 40px;
     text-align: center;
+    padding: 50px;
 }
 
 .hero h1 {
-    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .hero .search-form input {
-    padding: 10px;
-    font-size: 16px;
+    padding: 12px;
+    font-size: 18px;
     width: 60%;
     margin-right: 10px;
 }
 
 .hero .search-form button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #333;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #2e8b57;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .hero .search-form button:hover {
-    background-color: #444;
+    background-color: #388e3c;
 }
 
 .products {
-    padding: 40px;
     background-color: white;
+    padding: 40px;
     text-align: center;
 }
 
@@ -95,16 +98,18 @@ nav ul li a:hover {
 
 .product-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .product-card {
     background-color: #f9f9f9;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .product-card img {
@@ -113,27 +118,36 @@ nav ul li a:hover {
 }
 
 .product-card h3 {
-    margin: 15px 0;
+    margin-top: 15px;
+}
+
+.product-card p {
+    margin: 10px 0;
+}
+
+.product-card .product-description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
 }
 
 .product-card button {
-    background-color: #5e8b7e;
+    background-color: #2e8b57;
     color: white;
-    border: none;
     padding: 10px 20px;
+    border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .product-card button:hover {
-    background-color: #4a7265;
+    background-color: #388e3c;
 }
 
-.about,
-.contact {
+.about, .contact {
     background-color: white;
     padding: 40px;
     text-align: center;
-    margin-top: 20px;
 }
 
 .about h2, .contact h2 {
@@ -141,14 +155,14 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #2e8b57;
     color: white;
     text-align: center;
     padding: 20px 0;
 }
 
 footer a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
