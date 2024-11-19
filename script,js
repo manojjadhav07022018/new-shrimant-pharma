@@ -1,39 +1,107 @@
-// Form Validation
-document.querySelector('form').addEventListener('submit', function(e) {
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
-    
-    if (!name || !email || !message) {
-        alert('All fields are required!');
-        e.preventDefault(); // Prevent form submission
-    } else {
-        alert('Your message has been sent!');
-    }
-});
+// Wait for the DOM to load
+document.addEventListener("DOMContentLoaded", function() {
+    // Product Search Functionality
+    const searchInput = document.querySelector('.search-form input');
+    const products = document.querySelectorAll('.product-card');
+    const productList = document.querySelector('.product-list');
 
-// Shopping Cart (basic example)
-let cart = [];
+    // Event listener for search input
+    searchInput.addEventListener('input', function() {
+        const query = searchInput.value.toLowerCase();
 
-function addToCart(productName, price) {
-    cart.push({ product: productName, price: price });
-    updateCartDisplay();
-}
-
-function updateCartDisplay() {
-    const cartIcon = document.querySelector('.cart-icon');
-    cartIcon.textContent = `Cart (${cart.length})`;
-}
-
-// Add event listeners to "Add to Cart" buttons
-const addToCartButtons = document.querySelectorAll('.add-to-cart');
-addToCartButtons.forEach(button => {
-    button.addEventListener('click', (e) => {
-        const productCard = e.target.closest('.product-card');
-        const productName = productCard.querySelector('h3').textContent;
-        const price = productCard.querySelector('.price').textContent.replace('₹', '').trim();
-        
-        addToCart(productName, price);
+        products.forEach(function(product) {
+            const title = product.querySelector('h3').textContent.toLowerCase();
+            const description = product.querySelector('.description').textContent.toLowerCase();
+            
+            // Show product if the title or description contains the query
+            if (title.includes(query) || description.includes(query)) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
     });
-});
 
+    // Cart Functionality
+    let cart = []; // Array to store the products added to the cart
+
+    // Function to update the cart
+    function updateCart() {
+        const cartCount = document.querySelector('.cart-count');
+        cartCount.textContent = cart.length; // Update the cart item count
+    }
+
+    // Event listeners for "Add to Cart" buttons
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    
+    addToCartButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            const productCard = button.closest('.product-card');
+            const productName = productCard.querySelector('h3').textContent;
+            const productPrice = productCard.querySelector('.price').textContent;
+
+            // Add the product to the cart
+            cart.push({ name: productName, price: productPrice });
+
+            // Update the cart display
+            updateCart();
+            alert(`${productName} has been added to your cart!`);
+        });
+    });
+
+    // Contact Form Validation
+    const contactForm = document.querySelector('.contact form');
+    contactForm.addEventListener('submit', function(event) {
+        // Check if all fields are filled
+        const name = document.querySelector('#name').value;
+        const email = document.querySelector('#email').value;
+        const message = document.querySelector('#message').value;
+
+        if (!name || !email || !message) {
+            event.preventDefault(); // Prevent form submission if fields are empty
+            alert("Please fill in all fields before submitting.");
+        } else {
+            alert("Your message has been sent successfully.");
+        }
+    });
+
+    // Cart button to show items in the cart (could be added in the header or a modal)
+    const cartButton = document.createElement('button');
+    cartButton.textContent = 'View Cart';
+    cartButton.style.position = 'fixed';
+    cartButton.style.bottom = '20px';
+    cartButton.style.right = '20px';
+    cartButton.style.padding = '10px 20px';
+    cartButton.style.backgroundColor = '#0066cc';
+    cartButton.style.color = 'white';
+    cartButton.style.border = 'none';
+    cartButton.style.cursor = 'pointer';
+    document.body.appendChild(cartButton);
+
+    // Show cart details in an alert or modal
+    cartButton.addEventListener('click', function() {
+        if (cart.length === 0) {
+            alert("Your cart is empty.");
+        } else {
+            let cartDetails = "Items in your cart:\n";
+            cart.forEach(function(item, index) {
+                cartDetails += `${index + 1}. ${item.name} - ${item.price}\n`;
+            });
+            alert(cartDetails);
+        }
+    });
+
+    // Cart item count (you can place this wherever you'd like in the HTML)
+    const cartIcon = document.createElement('div');
+    cartIcon.classList.add('cart-count');
+    cartIcon.style.position = 'fixed';
+    cartIcon.style.top = '20px';
+    cartIcon.style.right = '20px';
+    cartIcon.style.backgroundColor = '#ff6600';
+    cartIcon.style.color = 'white';
+    cartIcon.style.padding = '10px';
+    cartIcon.style.borderRadius = '50%';
+    cartIcon.style.fontSize = '18px';
+    cartIcon.textContent = cart.length;
+    document.body.appendChild(cartIcon);
+});
