@@ -20,7 +20,7 @@
         </div>
     </header>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -30,97 +30,81 @@
         </ul>
     </nav>
 
-    <!-- Main Section -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
             <h1>Your Trusted Pharmacy - Quick and Reliable Medicine Delivery</h1>
-            <form action="#" class="search-form">
+            <form class="search-form">
                 <input type="text" placeholder="Search for medicines, devices, and more">
                 <button type="submit">Search</button>
             </form>
-        </section>
+        </div>
+    </section>
 
-        <!-- Featured Products Section -->
-        <section id="products" class="products">
-            <h2>Featured Products</h2>
-            <div class="product-list">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-logo">
-                        <img src="https://via.placeholder.com/100x100?text=Medicine+Logo" alt="Product 1 Logo" width="50">
-                    </div>
-                    <img src="https://cdn.pixabay.com/photo/2016/11/21/12/06/medicine-1840399_960_720.jpg" alt="Paracetamol 500mg" width="200">
-                    <h3>Paracetamol 500mg</h3>
-                    <p class="price">₹200</p>
-                    <p class="description">Used to treat mild to moderate pain, and reduce fever. A common over-the-counter medication.</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-logo">
-                        <img src="https://via.placeholder.com/100x100?text=Medicine+Logo" alt="Product 2 Logo" width="50">
-                    </div>
-                    <img src="https://cdn.pixabay.com/photo/2017/06/13/17/10/pill-2400104_960_720.jpg" alt="Amoxicillin 500mg" width="200">
-                    <h3>Amoxicillin 500mg</h3>
-                    <p class="price">₹150</p>
-                    <p class="description">An antibiotic used to treat various bacterial infections. Often prescribed for respiratory infections.</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-logo">
-                        <img src="https://via.placeholder.com/100x100?text=Medicine+Logo" alt="Product 3 Logo" width="50">
-                    </div>
-                    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/30/tablets-1236877_960_720.jpg" alt="Cetirizine 10mg" width="200">
-                    <h3>Cetirizine 10mg</h3>
-                    <p class="price">₹100</p>
-                    <p class="description">An antihistamine used to relieve allergy symptoms such as hay fever, urticaria (hives), and itching.</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+    <!-- Featured Products Section -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://cdn.pixabay.com/photo/2016/11/21/12/06/medicine-1840399_960_720.jpg" alt="Paracetamol 500mg">
+                <h3>Paracetamol 500mg</h3>
+                <p class="price">₹200</p>
+                <p class="description">Used to treat mild to moderate pain, and reduce fever. A common over-the-counter medication.</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-        </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>New Shrimant Pharma is a trusted pharmacy offering a wide range of medicines, healthcare products, and more. We ensure quick and safe delivery of authentic products. Our goal is to make healthcare products easily accessible, affordable, and reliable for everyone.</p>
-            <p>We are committed to delivering quality medicines and services, ensuring customer satisfaction with every order.</p>
-        </section>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://cdn.pixabay.com/photo/2017/06/13/17/10/pill-2400104_960_720.jpg" alt="Amoxicillin 500mg">
+                <h3>Amoxicillin 500mg</h3>
+                <p class="price">₹150</p>
+                <p class="description">An antibiotic used to treat various bacterial infections. Often prescribed for respiratory infections.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Contact Us</h2>
-            <p>For any inquiries, please contact us using the details below:</p>
-            <p>Phone: +91 8828256872, +91 9892909732</p>
-            <p>Email: <a href="mailto:info@newshrimantpharma.com">info@newshrimantpharma.com</a></p>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://cdn.pixabay.com/photo/2016/03/05/19/30/tablets-1236877_960_720.jpg" alt="Cetirizine 10mg">
+                <h3>Cetirizine 10mg</h3>
+                <p class="price">₹100</p>
+                <p class="description">An antihistamine used to relieve allergy symptoms such as hay fever, urticaria (hives), and itching.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
 
-            <!-- Contact Form -->
-            <form action="mailto:manojjadhav0702@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>New Shrimant Pharma is a trusted pharmacy offering a wide range of medicines, healthcare products, and more. We ensure quick and safe delivery of authentic products. Our goal is to make healthcare products easily accessible, affordable, and reliable for everyone.</p>
+    </section>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>For any inquiries, please contact us using the details below:</p>
+        <p>Phone: +91 8828256872, +91 9892909732</p>
+        <p>Email: <a href="mailto:info@newshrimantpharma.com">info@newshrimantpharma.com</a></p>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+        <form action="mailto:manojjadhav0702@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
     <!-- Footer Section -->
     <footer>
-        <div>
-            <p>&copy; 2024 New Shrimant Pharma. All rights reserved.</p>
-        </div>
-        <div>
-            <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
-        </div>
+        <p>&copy; 2024 New Shrimant Pharma. All rights reserved.</p>
+        <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
     </footer>
 
     <script src="script.js"></script>
