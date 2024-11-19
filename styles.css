@@ -1,11 +1,11 @@
-/* Reset some default browser styling */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and General Styling */
+/* Body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -13,7 +13,7 @@ body {
     color: #333;
 }
 
-/* Header Styling */
+/* Header */
 header {
     background-color: #0052cc;
     color: white;
@@ -27,13 +27,8 @@ header .logo img {
     max-width: 150px;
 }
 
-header .header-contact {
-    text-align: right;
-}
-
 header .header-contact p,
 header .header-contact a {
-    margin-bottom: 5px;
     font-size: 14px;
 }
 
@@ -42,32 +37,26 @@ header .header-contact a {
     text-decoration: none;
 }
 
-header .header-contact a:hover {
-    text-decoration: underline;
-}
-
-/* Navigation Bar Styling */
+/* Navigation */
 nav {
     background-color: #004080;
     padding: 10px 0;
-    text-align: center;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -89,14 +78,9 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.hero .search-form {
-    margin-top: 20px;
-}
-
 .hero .search-form input {
     padding: 10px;
     width: 250px;
-    font-size: 16px;
     margin-right: 10px;
     border-radius: 5px;
     border: none;
@@ -104,19 +88,18 @@ nav ul li a:hover {
 
 .hero .search-form button {
     padding: 10px 20px;
-    font-size: 16px;
     background-color: #ffcc00;
     color: white;
     border: none;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .hero .search-form button:hover {
     background-color: #ffaa00;
 }
 
-/* Product Section */
+/* Products Section */
 .products {
     padding: 40px 20px;
     text-align: center;
@@ -125,7 +108,6 @@ nav ul li a:hover {
 .products h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #0052cc;
 }
 
 .product-list {
@@ -142,117 +124,82 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
 }
 
 .product-card img {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .product-card h3 {
     font-size: 18px;
-    margin-top: 15px;
+    margin: 10px 0;
 }
 
 .product-card .price {
-    font-size: 20px;
-    color: #e67e22;
-    margin: 10px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
 }
 
 .product-card .description {
     font-size: 14px;
-    color: #777;
-    margin-bottom: 20px;
+    color: #666;
+    margin: 10px 0;
 }
 
 .product-card .add-to-cart {
-    padding: 10px 20px;
-    background-color: #0052cc;
+    background-color: #ff6600;
     color: white;
-    font-weight: bold;
     border: none;
+    padding: 10px;
     cursor: pointer;
+    width: 100%;
     border-radius: 5px;
 }
 
 .product-card .add-to-cart:hover {
-    background-color: #004080;
+    background-color: #e55d00;
 }
 
 /* About Section */
 .about {
-    background-color: #fff;
     padding: 40px 20px;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
 .about h2 {
-    font-size: 28px;
-    color: #0052cc;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
 .about p {
     font-size: 16px;
-    line-height: 1.5;
-    color: #555;
-    margin-bottom: 20px;
+    color: #333;
+    line-height: 1.6;
 }
 
 /* Contact Section */
 .contact {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: white;
+    text-align: center;
 }
 
 .contact h2 {
-    font-size: 28px;
-    color: #0052cc;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
 .contact p {
     font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.contact form {
-    margin-top: 20px;
-    text-align: left;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact form label {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 5px;
     color: #333;
-}
-
-.contact form input,
-.contact form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.contact form button {
-    background-color: #0052cc;
-    color: white;
-    padding: 12px 25px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contact form button:hover {
-    background-color: #004080;
 }
 
 /* Footer */
@@ -263,15 +210,11 @@ footer {
     text-align: center;
 }
 
-footer p {
-    margin: 10px 0;
-}
-
 footer a {
-    color: #ffcc00;
+    color: white;
     text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #ffcc00;
 }
