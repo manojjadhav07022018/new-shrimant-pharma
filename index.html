@@ -4,108 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Shrimant Pharma - Professional Pharmacy</title>
+    <meta name="description" content="Buy Medicines, Health Supplements, Fitness Products, and more at New Shrimant Pharma">
+    <meta name="keywords" content="pharmacy, medicines, health supplements, fitness products">
+    <meta name="author" content="New Shrimant Pharma">
+    <title>New Shrimant Pharma - Online Pharmacy</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts for better typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
-        <div class="container header-container">
-            <div class="logo">
-                <img src="https://raw.githubusercontent.com/manojjadhav07022018/new-shrimant-pharma/main/logo.png" alt="New Shrimant Pharma Logo">
-            </div>
-            <div class="header-contact">
-                <p>Call Us: <span>+91 8828256872 | +91 9892909732</span></p>
-                <a href="mailto:info@newshrimantpharma.com">Email: info@newshrimantpharma.com</a>
-            </div>
+        <div class="logo">
+            <img src="logo.png" alt="New Shrimant Pharma Logo" />
+        </div>
+        <div class="header-contact">
+            <p>Call Us: +91 8828256872 | +91 9892909732</p>
+            <a href="mailto:info@newshrimantpharma.com">info@newshrimantpharma.com</a>
         </div>
     </header>
 
     <!-- Navigation Bar -->
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Medicines</a></li>
+            <li><a href="#">Supplements</a></li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Your Trusted Pharmacy - Quick, Reliable, and Affordable Medicine Delivery</h1>
-                <form class="search-form">
-                    <input type="text" placeholder="Search for medicines, devices, and more">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section with Search Bar -->
+        <section class="hero">
+            <h1>Find the Best Medicines & Health Products</h1>
+            <form class="search-form">
+                <input type="text" id="search-bar" placeholder="Search for medicines, health products, etc." />
+                <button type="submit">Search</button>
+            </form>
+        </section>
 
-    <!-- Featured Products Section -->
-    <section id="products" class="products">
-        <div class="container">
+        <!-- Product Categories Section -->
+        <section class="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-list">
+                <div class="category">
+                    <img src="https://via.placeholder.com/200" alt="Medicines" />
+                    <p>Medicines</p>
+                </div>
+                <div class="category">
+                    <img src="https://via.placeholder.com/200" alt="Supplements" />
+                    <p>Supplements</p>
+                </div>
+                <div class="category">
+                    <img src="https://via.placeholder.com/200" alt="Fitness" />
+                    <p>Fitness</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="products">
             <h2>Featured Products</h2>
             <div class="product-list">
-                <!-- Product 1 -->
+                <!-- Example Product 1 -->
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1578985548997-e51a56d0f897" alt="Paracetamol 500mg">
+                    <img src="https://via.placeholder.com/150" alt="Product Name" />
                     <h3>Paracetamol 500mg</h3>
-                    <p class="price">₹200</p>
-                    <p class="description">Used to treat mild to moderate pain and reduce fever. A common over-the-counter medication.</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <p>₹200</p>
+                    <button class="add-to-cart" data-id="1">Add to Cart</button>
                 </div>
-
-                <!-- Product 2 -->
+                <!-- Example Product 2 -->
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1578985548997-e51a56d0f897" alt="Amoxicillin 500mg">
+                    <img src="https://via.placeholder.com/150" alt="Product Name" />
                     <h3>Amoxicillin 500mg</h3>
-                    <p class="price">₹150</p>
-                    <p class="description">An antibiotic used to treat various bacterial infections. Often prescribed for respiratory infections.</p>
-                    <button class="add-to-cart">Add to Cart</button>
+                    <p>₹150</p>
+                    <button class="add-to-cart" data-id="2">Add to Cart</button>
                 </div>
-
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1599660630410-b55910984a85" alt="Cetirizine 10mg">
-                    <h3>Cetirizine 10mg</h3>
-                    <p class="price">₹100</p>
-                    <p class="description">An antihistamine used to relieve allergy symptoms such as hay fever, urticaria (hives), and itching.</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
+                <!-- More products go here -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
+        <!-- About Us Section (no image) -->
+        <section id="about" class="about">
             <h2>About Us</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1601791807026-6bb087b77a53" alt="Pharmacy Image">
-                </div>
-                <div class="about-text">
-                    <p><strong>New Shrimant Pharma</strong> is your trusted partner in healthcare. We specialize in providing high-quality medicines, medical equipment, and healthcare products at affordable prices. Our commitment is to ensure that you receive the highest standard of care and convenience. We believe in providing not only medication but also a comprehensive approach to your wellness.</p>
-                    <p>Our team works tirelessly to ensure that every customer receives prompt, reliable, and safe delivery of their medications. Whether you're managing a chronic condition, recovering from surgery, or just maintaining your health, we are here to support you every step of the way.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p>Welcome to New Shrimant Pharma! We are a trusted pharmacy that offers a wide range of medicines, healthcare products, and wellness solutions. Our aim is to make quality healthcare accessible to all, while providing top-notch customer service.</p>
+            <p>At New Shrimant Pharma, we prioritize authenticity, quality, and affordability. Whether you need over-the-counter medicines or prescription drugs, we ensure safe and timely delivery at your doorstep.</p>
+            <p>Our store is located at:</p>
+            <p><strong>Neelam Nagar Bldg, Shop NO 2, 9-C, Mumbai City, Neelam Nagar, Phase-II, Mulund East, Mumbai, Maharashtra 40008</strong></p>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact">
             <h2>Contact Us</h2>
-            <p>Have any questions or need assistance? Reach out to us through the form below:</p>
-            <form action="mailto:manojjadhav0702@gmail.com" method="post" enctype="text/plain">
+            <p>For any inquiries, please feel free to contact us using the details below:</p>
+            <p>Phone: +91 8828256872, +91 9892909732</p>
+            <p>Email: <a href="mailto:info@newshrimantpharma.com">info@newshrimantpharma.com</a></p>
+            
+            <!-- Address -->
+            <p><strong>Address:</strong> Neelam Nagar Bldg, Shop NO 2, 9-C, Mumbai City, Neelam Nagar, Phase-II, Mulund East, Mumbai, Maharashtra 40008</p>
+
+            <!-- Contact Form -->
+            <form action="#">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -117,16 +118,14 @@
 
                 <button type="submit">Submit</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
-        <div class="container footer-container">
+        <div class="footer-content">
             <p>&copy; 2024 New Shrimant Pharma. All rights reserved.</p>
-            <div>
-                <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
-            </div>
+            <p>Follow Us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
         </div>
     </footer>
 
