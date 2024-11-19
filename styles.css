@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f0f8ff;  /* Light Blue Background */
   color: #333;
 }
 
@@ -26,7 +26,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f6fa1;
+  background-color: #ADD8E6;  /* Light Blue Header */
   color: white;
   padding: 10px 20px;
 }
@@ -43,7 +43,7 @@ header .header-contact a {
 
 /* Navigation */
 nav {
-  background-color: #0f6fa1;
+  background-color: #ADD8E6;  /* Light Blue Navigation */
   padding: 10px;
 }
 
@@ -64,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #005f79;
+  background-color: #87CEFA;  /* Lighter Blue on Hover */
   border-radius: 4px;
 }
 
@@ -95,7 +95,7 @@ nav ul li a:hover {
 }
 
 .search-form button {
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #0f6fa1;
   color: white;
   border: none;
@@ -107,118 +107,53 @@ nav ul li a:hover {
   background-color: #005f79;
 }
 
-/* Products Section */
+/* Product Section */
 .products {
+  background-color: #f9f9f9;
   padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
 }
 
 .products h2 {
+  text-align: center;
+  margin-bottom: 30px;
   font-size: 30px;
-  margin-bottom: 20px;
 }
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
+  justify-items: center;
 }
 
 .product-card {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .product-card img {
   width: 100%;
-  height: auto;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 
 .product-card h3 {
-  margin: 10px 0;
+  margin-top: 10px;
 }
 
-.product-card p {
-  margin: 10px 0;
-}
-
-.add-to-cart {
-  background-color: #0f6fa1;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.add-to-cart:hover {
-  background-color: #005f79;
-}
-
-/* About Section */
-.about {
-  padding: 50px 20px;
-  background-color: #e9e9e9;
-  text-align: center;
-}
-
-.about h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.about p {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Contact Section */
-.contact {
-  padding: 50px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-.contact form {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.contact label {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.contact input,
-.contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.contact button {
+.product-card .add-to-cart {
   background-color: #0f6fa1;
   color: white;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
+  margin-top: 10px;
 }
 
-.contact button:hover {
+.product-card .add-to-cart:hover {
   background-color: #005f79;
 }
 
