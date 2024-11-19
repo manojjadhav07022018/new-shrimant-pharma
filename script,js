@@ -1,6 +1,39 @@
-// JavaScript for "Add to Cart" functionality (demo)
-document.querySelectorAll('.add-to-cart').forEach(button => {
-    button.addEventListener('click', function() {
-        alert('Product added to your cart!');
+// Form Validation
+document.querySelector('form').addEventListener('submit', function(e) {
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
+    
+    if (!name || !email || !message) {
+        alert('All fields are required!');
+        e.preventDefault(); // Prevent form submission
+    } else {
+        alert('Your message has been sent!');
+    }
+});
+
+// Shopping Cart (basic example)
+let cart = [];
+
+function addToCart(productName, price) {
+    cart.push({ product: productName, price: price });
+    updateCartDisplay();
+}
+
+function updateCartDisplay() {
+    const cartIcon = document.querySelector('.cart-icon');
+    cartIcon.textContent = `Cart (${cart.length})`;
+}
+
+// Add event listeners to "Add to Cart" buttons
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        const productCard = e.target.closest('.product-card');
+        const productName = productCard.querySelector('h3').textContent;
+        const price = productCard.querySelector('.price').textContent.replace('₹', '').trim();
+        
+        addToCart(productName, price);
     });
 });
+
