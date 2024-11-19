@@ -1,129 +1,134 @@
-/* Reset some default browser styling */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f7f8f9;
-    color: #333;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
 }
 
-/* Header Section */
 header {
-    background-color: #004c8c;
-    padding: 20px 0;
-    color: white;
-}
-
-header .container {
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
-    width: 150px;
+    height: 50px;
 }
 
 header .header-contact p,
 header .header-contact a {
     font-size: 14px;
+    color: #333;
 }
 
-header .header-contact span {
-    font-weight: bold;
-}
-
-/* Navigation Bar */
 nav {
-    background-color: #003366;
-    padding: 15px 0;
+    background-color: #004c8c;
 }
 
-nav .container ul {
+nav ul {
     display: flex;
     justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
     list-style: none;
+    margin-right: 30px;
 }
 
-nav .container ul li {
-    margin: 0 20px;
-}
-
-nav .container ul li a {
-    color: white;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-weight: 500;
     font-size: 16px;
 }
 
-nav .container ul li a:hover {
-    color: #ff6600;
-}
-
-/* Hero Section */
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1601791807026-6bb087b77a53');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 20px;
+    background-color: #004c8c;
+    color: #fff;
     text-align: center;
+    padding: 60px 20px;
 }
 
-.hero .hero-content h1 {
+.hero h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-.hero .search-form input {
-    padding: 12px;
-    width: 250px;
-    border: none;
-    border-radius: 25px;
-    margin-right: 10px;
-    font-size: 16px;
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.hero .search-form button {
-    padding: 12px 20px;
-    border: none;
-    background-color: #ff6600;
-    color: white;
+.search-form input {
+    padding: 10px 20px;
+    width: 300px;
     border-radius: 25px;
-    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 25px;
+    color: white;
     cursor: pointer;
 }
 
-/* Products Section */
+.categories {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category {
+    width: 200px;
+    text-align: center;
+}
+
+.category img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 .products {
-    background-color: #ffffff;
-    padding: 60px 20px;
+    padding: 50px 20px;
+    background-color: #fff;
 }
 
 .products h2 {
+    font-size: 28px;
     text-align: center;
     margin-bottom: 40px;
-    font-size: 28px;
 }
 
 .product-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
 }
 
 .product-card {
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 280px;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
@@ -131,136 +136,75 @@ nav .container ul li a:hover {
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .product-card img {
     width: 100%;
+    height: 150px;
+    object-fit: contain;
     border-radius: 8px;
-    height: 200px;
-    object-fit: cover;
 }
 
 .product-card h3 {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.product-card .price {
-    color: #ff6600;
     font-size: 18px;
     margin-top: 10px;
 }
 
-.product-card .description {
-    margin-top: 10px;
+.product-card p {
     font-size: 14px;
-    color: #666;
+    color: #888;
 }
 
-.product-card .add-to-cart {
-    background-color: #004c8c;
-    color: white;
-    border: none;
-    padding: 10px;
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 5px;
+.contact, .about {
+    padding: 50px 20px;
+    background-color: #fff;
 }
 
-.product-card .add-to-cart:hover {
-    background-color: #003366;
-}
-
-/* About Section */
-.about {
-    background-color: #f4f4f4;
-    padding: 60px 20px;
-}
-
-.about h2 {
-    text-align: center;
-    margin-bottom: 40px;
+.contact h2, .about h2 {
     font-size: 28px;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.about-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.about-text {
-    font-size: 16px;
-    max-width: 600px;
-    line-height: 1.6;
-}
-
-/* Contact Section */
-.contact {
-    padding: 60px 20px;
-    background-color: #ffffff;
-}
-
-.contact h2 {
     text-align: center;
-    font-size: 28px;
     margin-bottom: 30px;
 }
 
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
+.contact p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .contact form input,
 .contact form textarea {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
 }
 
 .contact form button {
-    padding: 15px;
-    background-color: #ff6600;
-    color: white;
+    background-color: #004c8c;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
-    width: 100%;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .contact form button:hover {
-    background-color: #e55d00;
+    background-color: #003366;
 }
 
-/* Footer */
 footer {
-    background-color: #003366;
+    background-color: #004c8c;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
 footer a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
-    margin: 0 10px;
 }
 
 footer a:hover {
