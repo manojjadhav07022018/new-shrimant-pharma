@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Shrimant Pharma - Your Trusted Pharmacy</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="https://raw.githubusercontent.com/manojjadhav07022018/new-shrimant-pharma/main/logo.png" alt="New Shrimant Pharma Logo" width="150">
+            <img src="https://raw.githubusercontent.com/manojjadhav07022018/new-shrimant-pharma/main/logo.png" alt="New Shrimant Pharma Logo">
         </div>
         <div class="header-contact">
             <p>Call Us: +91 8828256872 | +91 9892909732</p>
@@ -33,7 +35,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Your Trusted Pharmacy - Quick and Reliable Medicine Delivery</h1>
+            <h1>Your Trusted Pharmacy - Fast and Reliable Medicine Delivery</h1>
             <form class="search-form">
                 <input type="text" placeholder="Search for medicines, devices, and more">
                 <button type="submit">Search</button>
@@ -47,16 +49,16 @@
         <div class="product-list">
             <!-- Product 1 -->
             <div class="product-card">
-                <img src="https://cdn.pixabay.com/photo/2016/11/21/12/06/medicine-1840399_960_720.jpg" alt="Paracetamol 500mg">
+                <img src="https://images.unsplash.com/photo-1555685812-f1d73c60f8b8" alt="Paracetamol 500mg">
                 <h3>Paracetamol 500mg</h3>
                 <p class="price">₹200</p>
-                <p class="description">Used to treat mild to moderate pain, and reduce fever. A common over-the-counter medication.</p>
+                <p class="description">Used to treat mild to moderate pain and reduce fever. A common over-the-counter medication.</p>
                 <button class="add-to-cart">Add to Cart</button>
             </div>
 
             <!-- Product 2 -->
             <div class="product-card">
-                <img src="https://cdn.pixabay.com/photo/2017/06/13/17/10/pill-2400104_960_720.jpg" alt="Amoxicillin 500mg">
+                <img src="https://images.unsplash.com/photo-1578985548997-e51a56d0f897" alt="Amoxicillin 500mg">
                 <h3>Amoxicillin 500mg</h3>
                 <p class="price">₹150</p>
                 <p class="description">An antibiotic used to treat various bacterial infections. Often prescribed for respiratory infections.</p>
@@ -65,7 +67,7 @@
 
             <!-- Product 3 -->
             <div class="product-card">
-                <img src="https://cdn.pixabay.com/photo/2016/03/05/19/30/tablets-1236877_960_720.jpg" alt="Cetirizine 10mg">
+                <img src="https://images.unsplash.com/photo-1599660630410-b55910984a85" alt="Cetirizine 10mg">
                 <h3>Cetirizine 10mg</h3>
                 <p class="price">₹100</p>
                 <p class="description">An antihistamine used to relieve allergy symptoms such as hay fever, urticaria (hives), and itching.</p>
@@ -77,16 +79,26 @@
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>New Shrimant Pharma is a trusted pharmacy offering a wide range of medicines, healthcare products, and more. We ensure quick and safe delivery of authentic products. Our goal is to make healthcare products easily accessible, affordable, and reliable for everyone.</p>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1601791807026-6bb087b77a53" alt="About New Shrimant Pharma">
+            </div>
+            <div class="about-text">
+                <p><strong>New Shrimant Pharma</strong> is a trusted and reliable pharmacy, dedicated to providing you with top-quality medicines, health products, and services. We believe in making healthcare accessible, affordable, and convenient for all our customers.</p>
+                <p>With our wide range of products, including essential prescription medicines, OTC drugs, wellness products, and medical devices, we ensure that every product we sell is of the highest standard. Our pharmacy is committed to quality, customer satisfaction, and prompt delivery of products directly to your doorsteps.</p>
+                <p>We work with leading pharmaceutical suppliers and ensure that our offerings comply with all health and safety regulations. Whether you're managing chronic conditions, recovering from surgery, or looking for preventive health measures, we have something for everyone.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <p>For any inquiries, please contact us using the details below:</p>
+        <p>If you have any questions or would like more information, feel free to contact us:</p>
         <p>Phone: +91 8828256872, +91 9892909732</p>
         <p>Email: <a href="mailto:info@newshrimantpharma.com">info@newshrimantpharma.com</a></p>
 
+        <!-- Contact Form -->
         <form action="mailto:manojjadhav0702@gmail.com" method="post" enctype="text/plain">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
